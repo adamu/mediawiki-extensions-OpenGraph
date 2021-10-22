@@ -1,23 +1,22 @@
 # OpenGraph
-## 概要
 
-OGPとTwitterカード(Summary Card)を追加する.
+This is a fork of [hiroyukisato/mediawiki-extensions-OpenGraph](https://github.com/hiroyukisato/mediawiki-extensions-OpenGraph) with the [fix](https://github.com/hiroyukisato/mediawiki-extensions-OpenGraph/pull/2) by `bertrandgorge` applied and the README translated into English.
+## Summary
 
+Adds OGP and Twitter Card metadata to articles.
 
-## インストール
-この extensionは [Extension:PageImages \- MediaWiki](https://www.mediawiki.org/wiki/Extension:PageImages)、[Extension:TextExtracts \- MediaWiki](https://www.mediawiki.org/wiki/Extension:TextExtracts)に依存しています
-
-(This extension has a hard dependency on Extension:TextExtracts and Extension:PageImages. )
+## Installation
+This extension depends on [Extension:PageImages](https://www.mediawiki.org/wiki/Extension:PageImages) and [Extension:TextExtracts](https://www.mediawiki.org/wiki/Extension:TextExtracts).
 
 LocalSettings.php
 ```php
  wfLoadExtension( 'OpenGraph' );
 ```
 
-## 設定
+## Settings
 
-```$ogpTwitter``` Twitterアカウントを指定できる (twitter:siteに入ります)
+```$ogpTwitter``` You can set the Twitter account (sets `twitter:site`).
 
 ```php
- $ogpTwitter = '@48pedia' //option
+ $ogpTwitter = '@48pedia' //optional
 ```
