@@ -15,7 +15,7 @@ class OpenGraph{
      *
      * @return bool
      */
-    public function addMeta( OutputPage &$out, Skin &$skin ) {
+    public static function addMeta( OutputPage &$out, Skin &$skin ) {
         global $wgRequest,$wgSitename,$wgLogo,$ogpTwitter;
 
         if ( $wgRequest->getVal( 'action', 'view' ) != 'view' ) {
