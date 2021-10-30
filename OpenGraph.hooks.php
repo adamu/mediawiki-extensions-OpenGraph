@@ -31,6 +31,7 @@ class OpenGraph{
 
         //Twitter
         $meta_t["twitter:card"]="summary";
+        $meta_t["twitter:title"] = $title;
         if(isset($ogpTwitter)){
             $meta_t["twitter:site"] = $ogpTwitter;
         }
@@ -45,6 +46,7 @@ class OpenGraph{
         if ( isset($data['extract'])) {
             $description = (string)$data['extract']['*'];
             $meta_o["og:description"] = $description ;
+            $meta_t["twitter:description"] = $description;
         }
 
         //image
@@ -54,6 +56,7 @@ class OpenGraph{
         }else{
             $meta_o["og:image"]     = $wgLogo;
         }
+        $meta_t["twitter:image"] = $meta_o["og:image"];
 
         //Twitter
         foreach ($meta_t as $property => $value) {
