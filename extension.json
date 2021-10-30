@@ -1,11 +1,11 @@
 {
   "name": "OpenGraph",
-  "version": "0.1.1-adamu",
+  "version": "0.1.3-adamu",
   "author": [
     "48pedia",
-    "adamu"
+    "Adam Millerchip"
   ],
-  "url": "",
+  "url": "https://github.com/adamu/mediawiki-extensions-OpenGraph",
   "descriptionmsg": "opengraph-desc",
   "license-name": "",
   "type": "other",
