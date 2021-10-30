@@ -16,7 +16,7 @@ class OpenGraph{
      * @return bool
      */
     public static function addMeta( OutputPage &$out, Skin &$skin ) {
-        global $wgRequest,$wgSitename,$wgLogos,$ogpTwitter;
+        global $wgRequest,$wgSitename,$wgLogos,$wgServer,$ogpTwitter;
 
         if ( $wgRequest->getVal( 'action', 'view' ) != 'view' ) {
             return true;
@@ -54,7 +54,7 @@ class OpenGraph{
             $image = (string)$data['thumbnail']['source'];
             $meta_o["og:image"]     = $image;
         }else{
-            $meta_o["og:image"]     = $wgLogos['1x'];
+            $meta_o["og:image"]     = $wgServer.$wgLogos['1x'];
         }
         $meta_t["twitter:image"] = $meta_o["og:image"];
 
